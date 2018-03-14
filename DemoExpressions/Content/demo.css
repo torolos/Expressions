@@ -1,0 +1,14 @@
+﻿body {
+}
+
+th, td{
+    padding-right: 20px;
+}
+
+th{
+    border-bottom: 3px solid #000000;
+}
+
+td{
+    border-bottom: 1px solid #808080;
+}

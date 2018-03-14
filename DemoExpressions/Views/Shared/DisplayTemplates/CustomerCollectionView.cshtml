@@ -1,0 +1,46 @@
+﻿@using ExpressionsDemo
+
+@model CustomerCollection
+
+@if (Model != null)
+    {
+<div>
+     
+    <table>
+        <thead>
+            <tr>
+                <th><b>Contact Name</b></th>
+                <th><b>Company</b></th>
+                <th><b>Address</b></th>
+                <th><b>City</b></th>
+                <th><b>Postal Code</b></th>
+                <th><b>Country</b></th>
+                <th><b>Phone</b></th>
+                <th><b>Fax</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                @foreach (Customer cust in Model)
+                {
+                    <tr>
+                        <td><span>@cust.ContactName</span></td>
+                        <td><span>@cust.CompanyName</span></td>
+                        <td><span>@cust.Address</span></td>
+                        <td><span>@cust.City</span></td>
+                        <td><span>@cust.PostalCode</span></td>
+                        <td><span>@cust.Country</span></td>
+                        <td><span>@cust.Phone</span></td>
+                        <td><span>@cust.Fax</span></td>
+                    </tr>
+                }
+            
+        </tbody>
+    </table>
+    
+</div>
+@*<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>*@
+}
